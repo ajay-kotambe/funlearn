@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="css/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="css/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="css/images/favicon-16x16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/courses.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course-MATE-Courses</title>
+    <script>
+      var videolink;
+      var x, y;
+      var videowindow;
+      function windowopen(videolink) {
+        videowindow = window.open(
+          videolink,
+          "Course",
+          "width=1000,height=500,left=175,top=100,right=200"
+        );
+        var x = document.getElementById("maximizeWindow");
+        var y = document.getElementById("closeWindow");
+        videowindow.window.focus();
+        x.style.display = "block";
+        y.style.display = "block";
+      }
+      function maximizeWindow() {
+        videowindow.resizeBy(200, 500);
+        videowindow.window.focus();
+      }
+      function closeWindow() {
+        var x = document.getElementById("maximizeWindow");
+        var y = document.getElementById("closeWindow");
+        videowindow.window.close();
+        x.style.display = "none";
+        y.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <!--feedback image-->
+    <img
+      src="css/images/feedback.png"
+      alt="Unsupported"
+      class="feedback"
+      onclick="feedback()"
+    />
+    <!--header-->
+    <header>
+      <img
+        src="css/images/companylogo.png"
+        alt="Unsupported"
+        class="company_logo"
+      />
+
+      <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="javascript: alert('Under Maintainance');">ABOUT US</a>
+        <a href="javascript: alert('Under Maintainance');">CONTACT US</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="admission.html">ADMISSION</a>
+        <a href="sign_in.html">SIGN IN</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <center>
+        <table cellpadding="20">
+          <tr>
+            <td>
+              <div class="box" id="box1">
+                <center>
+                  <img
+                    src="css/images/cLogo.png"
+                    alt="Unsupported"
+                    height="120px"
+                    width="120px"
+                  />
+                  <hr />
+                </center>
+                <h2>
+                  <b><label style="color: darkcyan">C Programming</label></b>
+                </h2>
+                <h3>
+                  <b>
+                    <p>
+                      Most popular courses by over 50,000 students learning!
+                      Built with years of experience by industry experts and
+                      gi<br />ves you a complete package of
+                      video,lectures,practice problems,quizzes,discussion forums
+                      and contests.<br />Start today!
+                    </p>
+                  </b>
+                </h3>
+                <center>
+                  <input
+                    type="button"
+                    value="Visit Course C"
+                    onclick="windowopen('https://youtu.be/ZSPZob_1TOk')"
+                  />
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="box" id="box2">
+                <center>
+                  <img
+                    src="css/images/cppLogo.png"
+                    alt="Unsupported"
+                    height="120px"
+                    width="120px"
+                  />
+                  <hr />
+                </center>
+                <h2>
+                  <b><label style="color: darkcyan">C++ Programming</label></b>
+                </h2>
+                <h3>
+                  <b>
+                    <p>
+                      Most popular courses by over 50,000 students learning!
+                      Built with years of experience by industry experts and
+                      gi<br />ves you a complete package of
+                      video,lectures,practice problems,quizzes,discussion forums
+                      and contests.<br />Start today!
+                    </p>
+                  </b>
+                </h3>
+                <center>
+                  <input
+                    type="button"
+                    value="Visit Course C++"
+                    onclick="windowopen('https://youtu.be/yGB9jhsEsr8')"
+                  />
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="box" id="box3">
+                <center>
+                  <img
+                    src="css/images/pylogo.jpg"
+                    alt="Unsupported"
+                    height="120px"
+                    width="200px"
+                  />
+                  <hr />
+                </center>
+                <h2>
+                  <b
+                    ><label style="color: darkcyan"
+                      >Python Programming</label
+                    ></b
+                  >
+                </h2>
+
+                <h3>
+                  <b>
+                    <p>
+                      Most popular courses by over 50,000 students learning!
+                      Built with years of experience by industry experts and
+                      gi<br />ves you a complete package of
+                      video,lectures,practice problems,quizzes,discussion forums
+                      and contests.<br />Start today!
+                    </p>
+                  </b>
+                </h3>
+                <center>
+                  <input
+                    type="button"
+                    value="Visit Course Python"
+                    onclick="windowopen('https://youtu.be/gfDE2a7MKjA')"
+                  />
+                </center>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="box" id="box4">
+                <center>
+                  <img
+                    src="css/images/javaLogo.png"
+                    alt="Unsupported"
+                    height="120px"
+                    width="120px"
+                  />
+                  <hr />
+                </center>
+                <h2>
+                  <b
+                    ><label style="color: darkcyan"
+                      >Core JAVA Programming</label
+                    ></b
+                  >
+                </h2>
+                <h3>
+                  <b>
+                    <p>
+                      Most popular courses by over 50,000 students learning!
+                      Built with years of experience by industry experts and
+                      gi<br />ves you a complete package of
+                      video,lectures,practice problems,quizzes,discussion forums
+                      and contests.<br />Start today!
+                    </p>
+                  </b>
+                </h3>
+                <center>
+                  <input
+                    type="button"
+                    value="Visit Course JAVA"
+                    onclick="windowopen('https://youtu.be/UmnCZ7-9yDY')"
+                  />
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="box" id="box5">
+                <center>
+                  <img
+                    src="css/images/weblogo.png"
+                    alt="Unsupported"
+                    height="120px"
+                    width="120px"
+                  />
+                  <hr />
+                </center>
+                <h2>
+                  <b
+                    ><label style="color: darkcyan"
+                      >HTML,CSS and Javascript</label
+                    ></b
+                  >
+                </h2>
+                <h3>
+                  <b>
+                    <p>
+                      Most popular courses by over 50,000 students learning!
+                      Built with years of experience by industry experts and
+                      gi<br />ves you a complete package of
+                      video,lectures,practice problems,quizzes,discussion forums
+                      and contests.<br />Start today!
+                    </p>
+                  </b>
+                </h3>
+                <center>
+                  <input
+                    type="button"
+                    value="Visit Course HTML"
+                    onclick="windowopen('https://youtu.be/Q33KBiDriJY')"
+                  />
+                </center>
+              </div>
+            </td>
+            <td>
+              <div class="box" id="box6">
+                <center>
+                  <img
+                    src="css/images/androidlogo.png"
+                    alt="Unsupported"
+                    height="120px"
+                    width="120px"
+                  />
+                  <hr />
+                </center>
+                <h2>
+                  <b
+                    ><label style="color: darkcyan"
+                      >Android Development</label
+                    ></b
+                  >
+                </h2>
+                <h3>
+                  <b>
+                    <p>
+                      Most popular courses by over 50,000 students learning!
+                      Built with years of experience by industry experts and
+                      gi<br />ves you a complete package of
+                      video,lectures,practice problems,quizzes,discussion forums
+                      and contests.<br />Start today!
+                    </p>
+                  </b>
+                </h3>
+                <center>
+                  <input
+                    type="button"
+                    value="Visit Course Android Development"
+                    onclick="windowopen('https://youtu.be/mXjZQX3UzOs')"
+                  />
+                </center>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </center>
+      <div>
+        <input
+          type="button"
+          value="Maximize Window"
+          id="maximizeWindow"
+          onclick="maximizeWindow()"
+        />
+        <br /><br />
+        <input
+          type="button"
+          value="Close Window"
+          id="closeWindow"
+          onclick="closeWindow()"
+        />
+      </div>
+    </div>
+
+    <!--address-->
+    <div class="address">
+      <div class="layer"></div>
+      <img
+        src="css/images/footer.png"
+        height="300px"
+        width="100%"
+        style="position: absolute"
+        alt="Unsupported"
+      />
+      <table class="table1" cellspacing="10">
+        <tr>
+          <th>Quick Explore</th>
+        </tr>
+        <tr>
+          <td><a href="index.htm">Home</a></td>
+        </tr>
+        <tr>
+          <td><a href="about_us.html">About Us</a></td>
+        </tr>
+        <tr>
+          <td><a href="contact_us.html">Contact Us</a></td>
+        </tr>
+        <tr>
+          <td><a href="gallery.html">Gallery</a></td>
+        </tr>
+        <tr>
+          <td><a href="admission.html">Admission</a></td>
+        </tr>
+        <tr>
+          <td><a href="sign_in.html">Sign In</a></td>
+        </tr>
+      </table>
+
+      <table class="table2">
+        <tr>
+          <th style="font-size: 18px; color: #ffffff">Address</th>
+        </tr>
+        <tr>
+          <td style="position: relative; top: 20%">
+            Fun Learn Private Limited,Aurangabad<br /><br />
+            Paithan Rd, Pimpalwadi, Maharashtra 431107<br /><br />
+            funlearn@gmail.com , Mobile No:+91xxxxxxxxxx
+          </td>
+        </tr>
+      </table>
+
+      <table class="table3">
+        <tr>
+          <th
+            style="
+              font-size: 18px;
+              color: #ffffff;
+              position: relative;
+              left: 20%;
+            "
+          >
+            Get In Touch
+          </th>
+        </tr>
+        <tr style="position: relative; top: 40px">
+          <td style="position: relative; left: 45px">
+            <a href="#"
+              ><img
+                src="css/images/instagram.png"
+                alt="Unsupported"
+                class="insta_icon"
+                title="Instagram"
+            /></a>
+          </td>
+          <td style="position: relative">
+            <a href="#"
+              ><img
+                src="css/images/facebook.png"
+                alt="Unsupported"
+                class="fb_icon"
+                title="Facefook"
+            /></a>
+          </td>
+          <td style="position: relative; left: -10px">
+            <a href="#"
+              ><img
+                src="css/images/twitter.png"
+                alt="Unsupported"
+                class="twit_icon"
+                title="Twitter"
+            /></a>
+          </td>
+          <td style="position: relative; left: 45px">
+            <a href="#"
+              ><img
+                src="css/images/share.png"
+                alt="Unsupported"
+                class="share_icon"
+                title="Share"
+            /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!--FEEDBACK POP UP WINDOW-->
+    <div class="window" id="window">
+      <i
+        class="material-icons"
+        title="Back"
+        style="
+          font-size: 36px;
+          position: relative;
+          top: 30px;
+          left: 50px;
+          color: #fff;
+          cursor: pointer;
+        "
+        onclick="back()"
+        >arrow_back</i
+      >
+      <label style="color: #fff; position: relative; top: 17px; left: 50px"
+        >Back</label
+      >
+
+      <center>
+        <label for="feedback_name" id="feedback_name">Feedback</label>
+        <p
+          style="
+            color: #fff;
+            font-family: verdana;
+            font-size: 13px;
+            position: relative;
+            top: 60px;
+            width: 360px;
+          "
+        >
+          Should you have face any issue, feel free to contact us, we will get
+          back to you as soon as we can !
+        </p>
+      </center>
+
+      <center>
+        <div class="feedback_box">
+          <form action="#" method="post">
+            <table cellspacing="20">
+              <tr>
+                <th>
+                  <img
+                    src="css/images/user.png"
+                    alt="Unsupported"
+                    height="15px"
+                    width="15px"
+                  />
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    name="username"
+                    id="name_feedback"
+                    placeholder="Name"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img
+                    src="css/images/mail.png"
+                    alt="Unsupported"
+                    height="15px"
+                    width="15px"
+                  />
+                </th>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email_feedback"
+                    placeholder="Email"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea
+                    name="feedback_msg"
+                    id="textarea_feedback"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <input type="button" value="Send" id="submit_feedback" />
+          </form>
+        </div>
+      </center>
+    </div>
+
+    <script>
+      function feedback() {
+        var x = document.getElementById("window");
+        x.style.display = "block";
+      }
+      function back() {
+        var y = document.getElementById("window");
+        y.style.display = "none";
+      }
+
+      function container_click() {
+        var y = document.getElementById("window");
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

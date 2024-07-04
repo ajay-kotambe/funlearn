@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fun Learn an E-learning web</title>
+    <!-- Favicon  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="css/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="css/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="css/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <!-- Favicon  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS & JS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+    <script></script>
+  </head>
+  <body onload="makeScroll()" onmouseover="sizeValidate()">
+    <!--header/menubar-->
+    <div class="contact_header">
+      <center>|&nbsp;<label id="creators"></label>&nbsp;|</center>
+    </div>
+
+    <!--feedback logo png -->
+    <img
+      src="css/images/feedback.png"
+      alt="Unsupported"
+      class="feedback"
+      onclick="feedback()"
+    />
+
+    <!--menubar/header -->
+    <header>
+      <div class="menu">
+        <a href="" style="color: white">HOME</a>
+        <a href="javascript: alert('Under Maintainance');">ABOUT US</a>
+        <a href="javascript: alert('Under Maintainance');">CONTACT US</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="admission.html">ADMISSION</a>
+        <a href="sign_in.html">SIGN IN</a>
+      </div>
+    </header>
+
+    <!--container -->
+    <div class="container" onclick="container_click()">
+      <!--header background image -->
+      <img
+        src="css/images/backgroundimg.jpg"
+        alt="Unsupported"
+        style="
+          position: relative;
+          box-shadow: 0px 2px 2px black;
+          height: 75%;
+          width: 100%;
+          filter: brightness(50%);
+        "
+      />
+      <!--company name on header/image -->
+      <div class="company_name" id="company_title">
+        Fun Learn <br />
+        An E-learning Platform,<br />Paithan
+      </div>
+      <!--company logo on header/image-->
+      <img
+        src="css/images/companylogo.png"
+        alt="Unsupported"
+        class="company_logo"
+      />
+
+      <div class="front_msg1">THINK! AND LEARN</div>
+      <!--register btn and txt-label -->
+      <div class="front_msg2" id="admissiontext">A_D_M_I_S_S_I_O_N_N_O_W</div>
+      <a href="admission.html">
+        <input type="submit" value="Admission" />
+      </a>
+
+      <div id="alertAd">
+        <a href="admission.html" id="alertAdLink"></a>
+      </div>
+
+      <!-- boxes contain courses and servises-->
+      <center>
+        <div class="parent">
+          <!--trenning box-->
+          <div class="box" id="box1">
+            <img src="css/images/itr_training.jpg" alt="Unsupported" />
+            <label class="itr">Industrial Training</label>
+            <p
+              style="
+                color: #fff;
+                font-family: verdana;
+                font-size: 16px;
+                text-align: justify;
+                margin: 15px;
+              "
+            >
+              The Industrial Training indicates to a program which aims to
+              provide a managed good practical training within a particular time
+              frame. This training is provided by both government organizations
+              and in the private sector.
+            </p>
+          </div>
+          <!--development box-->
+          <div class="box" id="box2">
+            <img src="css/images/development.jfif" alt="Unsupported" />
+            <label class="development">Development</label>
+            <p
+              style="
+                color: #fff;
+                font-family: verdana;
+                font-size: 16px;
+                text-align: justify;
+                margin: 15px;
+              "
+            >
+              The Industrial Training indicates to a program which aims to
+              provide a managed good practical training within a particular time
+              frame. This training is provided by both government organizations
+              and in the private sector.
+            </p>
+          </div>
+          
+          <a href="courses.html">
+            <div class="box" id="box3">
+              <img src="css/images/courses.png" alt="Unsupported" />
+              <label class="courses">Courses</label>
+              <p
+                style="
+                  color: #fff;
+                  font-family: verdana;
+                  font-size: 16px;
+                  text-align: justify;
+                  margin: 15px;
+                "
+              >
+                The Industrial Training indicates to a program which aims to
+                provide a managed good practical training within a particular
+                time frame. This training is provided by both government
+                organizations and in the private sector.
+              </p>
+            </div>
+          </a>
+          <!--project box-->
+          <div class="box" id="box4">
+            <img src="css/images/projects.jpg" alt="Unsupported" />
+            <label class="project">Our Project</label>
+            <p
+              style="
+                color: #fff;
+                font-family: verdana;
+                font-size: 16px;
+                text-align: justify;
+                margin: 15px;
+              "
+            >
+              The Industrial Training indicates to a program which aims to
+              provide a managed good practical training within a particular time
+              frame. This training is provided by both government organizations
+              and in the private sector.
+            </p>
+          </div>
+          <!--box for placement-->
+          <div class="box" id="box5">
+            <img src="css/images/placement.png" alt="Unsupported" />
+            <label class="placement">Placement Preparation</label>
+            <p
+              style="
+                color: #fff;
+                font-family: verdana;
+                font-size: 16px;
+                text-align: justify;
+                margin: 15px;
+              "
+            >
+              The Industrial Training indicates to a program which aims to
+              provide a managed good practical training within a particular time
+              frame. This training is provided by both government organizations
+              and in the private sector.
+            </p>
+          </div>
+          <!--box for career guidance-->
+          <div class="box" id="box6">
+            <img src="css/images/career-guidance.png" alt="Unsupported" />
+            <label class="career">Career Guidance</label>
+            <p
+              style="
+                color: #fff;
+                font-family: verdana;
+                font-size: 16px;
+                text-align: justify;
+                margin: 15px;
+              "
+            >
+              The Industrial Training indicates to a program which aims to
+              provide a managed good practical training within a particular time
+              frame. This training is provided by both government organizations
+              and in the private sector.
+            </p>
+          </div>
+        </div>
+      </center>
+    </div>
+
+    <!--address of the company -->
+    <div class="address">
+      <div class="layer"></div>
+      <img
+        src="css/images/footer.png"
+        height="300px"
+        width="100%"
+        style="position: absolute"
+        alt="Unsupported"
+      />
+      <!--quick explore table-->
+      <table class="table1" cellspacing="10">
+        <tr>
+          <th>Quick Explore</th>
+        </tr>
+        <tr>
+          <td><a href="index.html">Home</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="javascript: alert('Under Maintainance');">About Us</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="javascript: alert('Under Maintainance');">Contact Us</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="gallery.html">Gallery</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="admission.html">Admission</a></td>
+        </tr>
+        <tr>
+          <td><a href="sign_in.html">Sign In</a></td>
+        </tr>
+      </table>
+
+      <!--table for address-->
+      <table class="table2">
+        <tr>
+          <th style="font-size: 18px; color: #ffffff">Address</th>
+        </tr>
+        <tr>
+          <td style="position: relative; top: 20%">
+            <br />
+            Fun Learn Private Limited,Aurangabad<br /><br />
+            Paithan Rd, Pimpalwadi, Maharashtra 431107<br /><br />
+            funlearn@gmail.com , Mobile No:+91xxxxxxxxxx
+          </td>
+        </tr>
+      </table>
+
+      <!--icons in address-->
+      <table class="table3">
+        <tr>
+          <th
+            style="
+              font-size: 18px;
+              color: #ffffff;
+              position: relative;
+              left: 20%;
+            "
+          >
+            Get In Touch
+          </th>
+        </tr>
+        <tr style="position: relative; top: 40px">
+          <td style="position: relative; left: 45px">
+            <a href="#"
+              ><img
+                src="css/images/instagram.png"
+                alt="Unsupported"
+                class="insta_icon"
+                title="Instagram"
+            /></a>
+          </td>
+          <td style="position: relative">
+            <a href="#"
+              ><img
+                src="css/images/facebook.png"
+                alt="Unsupported"
+                class="fb_icon"
+                title="Facefook"
+            /></a>
+          </td>
+          <td style="position: relative; left: -10px">
+            <a href="#"
+              ><img
+                src="css/images/twitter.png"
+                alt="Unsupported"
+                class="twit_icon"
+                title="Twitter"
+            /></a>
+          </td>
+          <td style="position: relative; left: 45px">
+            <a href="#"
+              ><img
+                src="css/images/share.png"
+                alt="Unsupported"
+                class="share_icon"
+                title="Share"
+            /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!--FEEDBACK POP UP WINDOW-->
+    <div class="window" id="window">
+      <i
+        class="material-icons"
+        title="Back"
+        style="
+          font-size: 36px;
+          position: relative;
+          top: 30px;
+          left: 50px;
+          color: #fff;
+          cursor: pointer;
+        "
+        onclick="back()"
+        >arrow_back</i
+      >
+      <label style="color: #fff; position: relative; top: 17px; left: 50px"
+        >Back</label
+      >
+
+      <center>
+        <label for="feedback_name" id="feedback_name">Feedback</label>
+        <p
+          style="
+            color: #fff;
+            font-family: verdana;
+            font-size: 13px;
+            position: relative;
+            top: 60px;
+            width: 360px;
+          "
+        >
+          Should you have face any issue, feel free to contact us, we will get
+          back to you as soon as we can !
+        </p>
+      </center>
+
+      <center>
+        <div class="feedback_box">
+          <form action="#" method="post">
+            <table cellspacing="20">
+              <tr>
+                <th>
+                  <img
+                    src="css/images/user.png"
+                    alt="Unsupported"
+                    height="15px"
+                    width="15px"
+                  />
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Name"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img
+                    src="css/images/mail.png"
+                    alt="Unsupported"
+                    height="15px"
+                    width="15px"
+                  />
+                </th>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea
+                    name="feedback_msg"
+                    id="feedback_msg"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <input type="button" value="Send" class="submit" />
+          </form>
+        </div>
+      </center>
+    </div>
+
+    <!--javascript-->
+    <script>
+      function feedback() {
+        var x = document.getElementById("window");
+        x.style.display = "block";
+      }
+      function back() {
+        var y = document.getElementById("window");
+        y.style.display = "none";
+      }
+      function container_click() {
+        var y = document.getElementById("window");
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

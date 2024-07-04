@@ -1,0 +1,325 @@
+body {
+  background-color: #020949;
+  margin: 0;
+  padding: 0;
+  min-zoom: 100%;
+  max-zoom: 100%;
+}
+.company_logo {
+  height: 80px;
+  width: 100px;
+  cursor: pointer;
+  position: absolute;
+  left: 5%;
+}
+.errorMSG {
+  font-size: smaller;
+  color: red;
+}
+
+.feedback {
+  height: 50px;
+  width: 100px;
+  z-index: 3;
+  position: fixed;
+  top: 90%;
+  left: 87%;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 80px;
+  width: 100%;
+  background-color: #20325b;
+  font-weight: bold;
+  font-size: 14pt;
+  z-index: 1;
+  box-shadow: 0px 0px 7px #8800a336, 0px 0px 7px #8800a336;
+}
+.menu {
+  text-align: center;
+  float: right;
+  position: relative;
+  top: 30px;
+  right: 5%;
+}
+div a {
+  margin-right: 40px;
+  text-decoration: none;
+  font-size: 11pt;
+  color: #9eaffc;
+}
+
+.menu a:hover {
+  color: #ff6600d7;
+  border-bottom: 1px solid #7d91eb;
+}
+
+.container {
+  height: 600px;
+  width: 70%;
+  margin: auto;
+  background-color: rgb(88, 199, 235);
+  margin-top: 150px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #e1aeffbe;
+}
+
+#label {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.596);
+  font-weight: bold;
+  line-height: 100px;
+}
+.phoneNu{
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 150px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.text_field {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 150px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="date"] {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 150px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#studNumber {
+  width: 300px;
+}
+
+input[type="number"] {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 200px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#studAddress {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 50px;
+  width: 300px;
+  max-height: 50px;
+  min-height: 50px;
+  max-width: 300px;
+  min-width: 300px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#studEmail {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 250px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#studSkills {
+  width: 270px;
+}
+#studentEducation {
+  width: 50%;
+}
+
+input[type="submit"] {
+  position: relative;
+  margin-top: 50px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  background-image: linear-gradient(-45deg, #fc47b6, purple);
+  border-radius: 10px;
+  font-size: 16spx;
+  color: white;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  box-shadow: 0px 0px 7px purple, 0px 0px 7px purple;
+}
+
+.address {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  margin-top: 200px;
+}
+.layer {
+  background-color: #292929bb;
+  z-index: 1;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+}
+
+.table1 {
+  position: absolute;
+  left: 10%;
+  margin-top: 45px;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.table2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  color: #ffffff;
+  position: absolute;
+  left: 30%;
+  margin-top: 50px;
+  z-index: 1;
+}
+.table3 {
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  left: 65%;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+table tr td a:hover {
+  color: #ffb30f;
+}
+
+.insta_icon,
+.fb_icon,
+.twit_icon,
+.share_icon {
+  height: 30px;
+  width: 30px;
+}
+.insta_icon:hover {
+  box-shadow: 2px 2px 5px #ffffff;
+  border-radius: 5px;
+}
+.fb_icon:hover {
+  box-shadow: 2px 2px 5px #ffffff;
+  border-radius: 5px;
+}
+.twit_icon:hover {
+  box-shadow: 2px 2px 5px #ffffff;
+  border-radius: 5px;
+}
+
+/*feedback window*/
+
+.window {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  height: 500px;
+  width: 450px;
+  background: linear-gradient(-45deg, #2a07ef, #5f1676);
+  z-index: 1;
+  border-radius: 10px;
+  display: none;
+}
+
+#feedback_name {
+  color: #fff;
+  font-size: 36px;
+  font-family: HP Simplified;
+  position: relative;
+  top: 70px;
+}
+
+.feedback_box {
+  height: 230px;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  top: 70px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgb(83, 83, 83);
+}
+
+#name_feedback {
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #7d91eb;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 250px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#email_feedback {
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #7d91eb;
+  outline: none;
+  font-size: 16px;
+  height: 20px;
+  width: 250px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#textarea_feedback {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 50px;
+  width: 250px;
+  max-height: 50px;
+  min-height: 50px;
+  max-width: 250px;
+  min-width: 250px;
+  background-color: #e1aeff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#submit_feedback {
+  position: relative;
+  margin-top: 0px;
+  margin-left: 75%;
+  height: 30px;
+  width: 70px;
+  text-align: center;
+  line-height: 30px;
+  border: none;
+  background-image: linear-gradient(-45deg, #9b47fc, purple);
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+}

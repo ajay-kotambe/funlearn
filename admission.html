@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="css/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="css/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="css/images/favicon-16x16.png"
+    />
+    <!-- Favicon -->
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/admission.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Fun Learn -Admission</title>
+    <script>
+      function change(Element) {
+        Element.style.color = "white";
+        Element.style.font = "bold";
+        var fn = document.forms.admissionform.studName.value.toUpperCase();
+        studName.value = fn;
+        var mn = document.forms.admissionform.fatherName.value.toUpperCase();
+        fatherName.value = mn;
+        var ln = document.forms.admissionform.surName.value.toUpperCase();
+        surName.value = ln;
+        var mother =
+          document.forms.admissionform.motherName.value.toUpperCase();
+        motherName.value = mother;
+      }
+      function validateStudName() {
+        var fn = document.forms.admissionform.studName.value;
+        studName.value = fn;
+
+        var valReg = /[^0-9]/;
+        var fnReg = valReg.test(fn);
+
+        if (fn == "") {
+          document.getElementById("errorSt").innerHTML = "Enter First Name ";
+        } else if (!fnReg) {
+          document.getElementById("errorSt").innerHTML = "Enter Valid Name!";
+          return false;
+        } else {
+          document.getElementById("errorSt").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+          return true;
+        }
+      }
+      function validateFathName() {
+        var mn = document.forms.admissionform.fatherName.value;
+        fatherName.value = mn;
+        var valReg = /[^0-9]/;
+        var mnReg = valReg.test(mn);
+
+        if (mn == "") {
+          document.getElementById("errorFt").innerHTML = "Enter Middle Name ";
+        } else if (!mnReg) {
+          document.getElementById("errorFt").innerHTML = "Enter Valid Name!";
+          return false;
+        } else {
+          document.getElementById("errorFt").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+          return true;
+        }
+      }
+      function validateSurName() {
+        var ln = document.forms.admissionform.surName.value;
+        surName.value = ln;
+        var valReg = /[^0-9]/;
+        var lnReg = valReg.test(ln);
+
+        if (ln == "") {
+          document.getElementById("errorSut").innerHTML = "Enter Last Name ";
+        } else if (!lnReg) {
+          document.getElementById("errorSut").innerHTML = "Enter Valid Name!";
+          return false;
+        } else {
+          document.getElementById("errorSut").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+          return true;
+        }
+      }
+      function validateMotherName() {
+        var mother = document.forms.admissionform.motherName.value;
+        motherName.value = mother;
+        var valReg = /[^0-9]/;
+        var motReg = valReg.test(mother);
+
+        if (mother == "") {
+          document.getElementById("errorMother").innerHTML =
+            "Enter Mother Name ";
+        } else if (!motReg) {
+          document.getElementById("errorMother").innerHTML =
+            "Enter Valid Name!";
+          return false;
+        } else {
+          document.getElementById("errorMother").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+          return true;
+        }
+      }
+      function checkmobile1(Element) {
+        Element.style.color = "white";
+        Element.style.font = "bold";
+        var studnumber = document.admissionform.studNumber.value;
+        var patt = /^[0-9]\d{9}/;
+        var res = patt.test(studnumber);
+        if (studnumber == "") {
+          document.getElementById("errorPh1").innerHTML =
+            "Please Provide 10digit Moblile Number";
+          return false;
+        } else if (!res) {
+          document.getElementById("errorPh1").innerHTML =
+            "Invalid Mobile Number:Please Provide 10digit Moblile Number ";
+          return false;
+        } else {
+          document.getElementById("errorPh1").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+      }
+      function checkmobile2(Element) {
+        Element.style.color = "white";
+        Element.style.font = "bold";
+        var parentnumber = document.admissionform.parentNumber.value;
+        var patt = /^[0-9]\d{9}/;
+        var res = patt.test(parentnumber);
+        if (parentnumber == "") {
+          document.getElementById("errorPh2").innerHTML =
+            "Please Provide 10digit Moblile Number";
+          return false;
+        } else if (!res) {
+          document.getElementById("errorPh2").innerHTML =
+            "Invalid Mobile Number:Please Provide 10digit Moblile Number ";
+          return false;
+        } else {
+          document.getElementById("errorPh2").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+      }
+
+      function checkemail(Element) {
+        Element.style.color = "white";
+        Element.style.font = "bold";
+        var studEmail = document.admissionform.studEmail.value;
+        var patternemail = /^\w{3,}@\w{5}[.]{1}\w{3}$/;
+        var resemail = patternemail.test(studEmail);
+        if (studEmail == "") {
+          document.getElementById("errorEm").innerHTML =
+            "Please Provide Email ID";
+          return false;
+        } else if (!resemail) {
+          document.getElementById("errorEm").innerHTML =
+            "Invalid Email:Please Provide Valid Email Id";
+          return false;
+        } else {
+          document.getElementById("errorEm").innerHTML =
+            "&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#"
+      ><img
+        src="css/images/feedback.png"
+        alt="Unsupported"
+        class="feedback"
+        onclick="feedback()"
+    /></a>
+    <header>
+      <img
+        src="css/images/companylogo.png"
+        alt="Unsupported"
+        class="company_logo"
+      />
+
+      <div class="menu">
+        <a href="index.html">HOME</a>
+        <a href="javascript: alert('Under Maintainance');">ABOUT US</a>
+        <a href="javascript: alert('Under Maintainance');">CONTACT US</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="admission.html" style="color: white">ADMISSION</a>
+        <a href="sign_in.html">SIGN IN</a>
+      </div>
+    </header>
+
+    <div class="container" onclick="container_click()">
+      <center>
+        <label for="nameoftable" id="label">ADMISSION FORM</label>
+      </center>
+
+      <form action="courses.html" method="post" name="admissionform">
+        <table cellspacing="0" cellpadding="10" border="0" style="width: 100%">
+          <tr>
+            <th>Student Full Name:</th>
+            <td>
+              <br />
+              <input
+                type="text"
+                name="studName"
+                id="studName"
+                placeholder="First Name"
+                autocomplete="off"
+                required
+                class="text_field"
+                onfocus="change(this)"
+                onblur="validateStudName()"
+              />
+              <br />
+              <label for="" id="errorSt" class="errorMSG"
+                >&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+            </td>
+            <td>
+              <br />
+
+              <input
+                type="text"
+                name="fatherName"
+                id="fatherName"
+                placeholder="Middle Name"
+                autocomplete="off"
+                required
+                class="text_field"
+                onfocus="change(this)"
+                onblur="validateFathName()"
+              />
+              <br />
+              <label for="" id="errorFt" class="errorMSG"
+                >&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+            </td>
+            <td>
+              <br />
+              <input
+                type="text"
+                name="surName"
+                id="surName"
+                placeholder="Last Name"
+                autocomplete="off"
+                required
+                class="text_field"
+                onfocus="change(this)"
+                onblur="validateStudName()"
+              />
+              <br />
+              <label for="" id="errorSut" class="errorMSG"
+                >&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+            </td>
+            <td>
+              <br />
+              <input
+                type="text"
+                name="motherName"
+                id="motherName"
+                placeholder="Mother Name"
+                autocomplete="off"
+                required
+                class="text_field"
+                onfocus="change(this)"
+                onblur="validateStudName()"
+              />
+              <br />
+              <label for="" id="errorMother" class="errorMSG"
+                >&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>DOB:</th>
+            <td><input type="date" name="dob" id="dob" required /></td>
+            <th>Contact (What's App):</th>
+            <td colspan="2">
+              <br />
+              <input
+                type="phone"
+                name="studNumber"
+                id="studNumber"
+                placeholder="What's App Number"
+                class="phoneNu"
+                required
+                onblur="checkmobile1(this)"
+              />
+              <br />
+              <label for="" id="errorPh1" class="errorMSG"
+                >&nbsp;&nbsp;&nbsp;</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>Parent Number:</th>
+            <td>
+              <br />
+              <input
+                type="phone"
+                name="parentNumber"
+                id="parentNumber"
+                placeholder="Mobile Number"
+                class="phoneNu"
+                required
+                onblur="checkmobile2(this)"
+              />
+              <br />
+              <label id="errorPh2" class="errorMSG">&nbsp;&nbsp;&nbsp;</label>
+            </td>
+            <th>Address:</th>
+            <td colspan="2">
+              <br />
+              <textarea
+                name="studAddress"
+                id="studAddress"
+                cols="30"
+                rows="5"
+                placeholder="Address..."
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>Email Id:</th>
+            <td>
+              <br />
+              <input
+                type="email"
+                name="studEmail"
+                id="studEmail"
+                autocomplete="off"
+                placeholder="Email"
+                required
+                onblur="checkemail(this)"
+              />
+              <br />
+              <label id="errorEm" class="errorMSG"
+                >&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+            </td>
+            <th>Skills:</th>
+            <td colspan="2">
+              <input
+                type="text"
+                name="studSkills"
+                id="studSkills"
+                placeholder="Skills"
+                class="text_field"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th>Admission For:</th>
+            <td>
+              <input type="checkbox" name="itr" id="itr" /> Android Development
+            </td>
+            <td>
+              <input type="checkbox" name="webDesign" id="webDesign" /> Web
+              Development
+            </td>
+            <td>
+              <input type="checkbox" name="internship" id="internship" />
+              Internship
+            </td>
+            <td><input type="checkbox" name="other" id="other" /> Other</td>
+          </tr>
+        </table>
+
+        <center>
+          <input type="submit" value="Submit" />
+        </center>
+      </form>
+    </div>
+
+    <div class="address">
+      <div class="layer"></div>
+      <img
+        src="css/images/footer.png"
+        height="300px"
+        width="100%"
+        style="position: absolute"
+        alt="Unsupported"
+      />
+      <table class="table1" cellspacing="10">
+        <tr>
+          <th>Quick Explore</th>
+        </tr>
+        <tr>
+          <td><a href="index.html">Home</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="javascript: alert('Under Maintainance');">About Us</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="javascript: alert('Under Maintainance');">Contact Us</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="gallery.html">Gallery</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="admission.html">Admission</a></td>
+        </tr>
+        <tr>
+          <td><a href="sign_in.html">Sign In</a></td>
+        </tr>
+      </table>
+
+      <table class="table2">
+        <tr>
+          <th style="font-size: 18px; color: #ffffff">Address</th>
+        </tr>
+        <tr>
+          <td style="position: relative; top: 20%">
+            Fun Learn Private Limited,Aurangabad<br /><br />
+            Paithan Rd, Pimpalwadi, Maharashtra 431107<br /><br />
+            funlearn@gmail.com , Mobile No:+91xxxxxxxxxx
+          </td>
+        </tr>
+      </table>
+
+      <table class="table3">
+        <tr>
+          <th
+            style="
+              font-size: 18px;
+              color: #ffffff;
+              position: relative;
+              left: 20%;
+            "
+          >
+            Get In Touch
+          </th>
+        </tr>
+        <tr style="position: relative; top: 40px">
+          <td style="position: relative; left: 45px">
+            <a href="#"
+              ><img
+                src="css/images/instagram.png"
+                alt="Unsupported"
+                class="insta_icon"
+                title="Instagram"
+            /></a>
+          </td>
+          <td style="position: relative">
+            <a href="#">
+              <img
+                src="css/images/facebook.png"
+                alt="Unsupported"
+                class="fb_icon"
+                title="Facefook"
+            /></a>
+          </td>
+          <td style="position: relative; left: -10px">
+            <a href="#"
+              ><img
+                src="css/images/twitter.png"
+                alt="Unsupported"
+                class="twit_icon"
+                title="Twitter"
+            /></a>
+          </td>
+          <td style="position: relative; left: 45px">
+            <a href="#"
+              ><img
+                src="css/images/share.png"
+                alt="Unsupported"
+                class="share_icon"
+                title="Share"
+            /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!--FEEDBACK POP UP WINDOW-->
+    <div class="window" id="window">
+      <i
+        class="material-icons"
+        title="Back"
+        style="
+          font-size: 36px;
+          position: relative;
+          top: 30px;
+          left: 50px;
+          color: #fff;
+          cursor: pointer;
+        "
+        onclick="back()"
+        >arrow_back</i
+      >
+      <label style="color: #fff; position: relative; top: 17px; left: 50px"
+        >Back</label
+      >
+
+      <center>
+        <label for="feedback_name" id="feedback_name">Feedback</label>
+        <p
+          style="
+            color: #fff;
+            font-family: verdana;
+            font-size: 13px;
+            position: relative;
+            top: 60px;
+            width: 360px;
+          "
+        >
+          Should you have face any issue, feel free to contact us, we will get
+          back to you as soon as we can !
+        </p>
+      </center>
+
+      <center>
+        <div class="feedback_box">
+          <form action="#" method="post">
+            <table cellspacing="20">
+              <tr>
+                <th>
+                  <img
+                    src="css/images/user.png"
+                    alt="Unsupported"
+                    height="15px"
+                    width="15px"
+                  />
+                </th>
+                <td>
+                  <input
+                    type="text"
+                    name="username"
+                    id="name_feedback"
+                    placeholder="Name"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <img
+                    src="css/images/mail.png"
+                    alt="Unsupported"
+                    height="15px"
+                    width="15px"
+                  />
+                </th>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email_feedback"
+                    placeholder="Email"
+                    autocomplete="off"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea
+                    name="feedback_msg"
+                    id="textarea_feedback"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+
+            <input type="button" value="Send" id="submit_feedback" />
+          </form>
+        </div>
+      </center>
+    </div>
+
+    <script>
+      function feedback() {
+        var x = document.getElementById("window");
+        x.style.display = "block";
+      }
+      function back() {
+        var y = document.getElementById("window");
+        y.style.display = "none";
+      }
+
+      function container_click() {
+        var y = document.getElementById("window");
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
